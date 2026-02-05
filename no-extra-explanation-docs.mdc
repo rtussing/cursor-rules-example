@@ -1,0 +1,8 @@
+---
+description: Don't create documentation files since explanations go to chat
+alwaysApply: true
+---
+
+# No Documentation Files
+
+Never create files (*.md, *.mdc) to explain changes, document features, or provide instructions, as all explanations are already communicated through the chat window.

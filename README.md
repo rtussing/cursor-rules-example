@@ -9,6 +9,10 @@
 
 This repo contains some of the Cursor rules that I use in my normal development process.
 
+Some of them are really nice to use, like `@review`. Some of them don't really get me what I'm looking for, but they're still hanging around in my repo: `@api-endpoints-crud`.
+
+I constantly adjust the rules as I see fit. Working with agents requires the ability to manage the development process and review changes. You have to learn to trust the agent, but never too much. And if the agent doesn't do something correct, it often comes back to giving it bad instructions.
+
 If you've never used rules in an agentic coding app, this might help: [Quick Guide to Cursor Rules](#quick-guide-to-cursor-rules).
 
 ## How I use Cursor Rules
@@ -29,10 +33,10 @@ I found that at some point my agent was more efficient if I took the valuable pa
 
 Here's the way I currently use Cursor for general, large-scale development:
 
-1. I open a chat window and tag my @analyze-and-plan rule. I tell the agent what update I want to make, and I give it as much specific information as I can. The agent looks through the codebase and creates a markdown document that describes the changes, provides files, functions, line numbers, and example code, and whatever else I ask for.
-2. I review the plan. If I want to make an update to the plan, I use my @review rule.
-3. I take the finished plan and give it to a new agent, and tag my @implement-plan rule.
-4. I review the implementation. I test, ask the agent questions, and make changes using my @review rule.
+1. I open a chat window and tag my `@analyze-and-plan` rule. I tell the agent what update I want to make, and I give it as much specific information as I can. The agent looks through the codebase and creates a markdown document that describes the changes, provides files, functions, line numbers, and example code, and whatever else I ask for.
+2. I review the plan. If I want to make an update to the plan, I use my `@review` rule.
+3. I take the finished plan and give it to a new agent, and tag my `@implement-plan` rule.
+4. I review the implementation. I test, ask the agent questions, and make changes using my `@review` rule.
 
 I recently watched the following video. It's where I got the name "harness engineering". It's a really good explanation of common context issues, and it makes a really strong case for how to manage context. It accurately describes the dev process that I've found to be the most effective.
 

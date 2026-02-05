@@ -1,0 +1,59 @@
+---
+description: Central index for all Cursor rules in this repository
+globs:
+alwaysApply: true
+---
+# Cursor Rules - Master Index
+
+This document serves as the central index for all active Cursor rules within this repository, organized by category. Use this as your starting point for rule discovery and navigation.
+
+## Core & General
+
+| Rule File                   | Description                                   |
+| :-------------------- | :-------------------------------------------- |
+| @cursor-rules.mdc           | How to add or edit Cursor rules in our project|
+| @index.mdc                  | (This file) Master index for all Cursor rules |
+| @review.mdc                 | Review recent changes or responses            |
+| @react-component-modularity.mdc | Guidelines for creating modular React components |
+| @file-change-permission.mdc | Only modify files explicitly requested by user |
+| @sycophancy.mdc | The user has final say, but be willing to push for improvements |
+| @manual-terminal-commands.mdc | Terminal commands to output for manual execution (npm, npx) |
+| @analyze-and-plan.mdc | Read the user's request and create an implementation plan |
+| @implement-plan.mcc | Take a pre-approved plan and follow it's directions to implement a feature |
+| @nextjs-fetch-strategy.mdc | Choose between server-side and client-side rendering |
+| @no-extra-explanation-docs.mdc | Don't create extra documentation files since explanations go to chat |
+
+
+## Auth & Integration
+
+| Rule File             | Description                                   |
+| :-------------------- | :-------------------------------------------- |
+| @auth0.mdc            | Using Auth0 with Next.js                      |
+
+## Infrastructure
+
+| Rule File             | Description                                   |
+| :-------------------- | :-------------------------------------------- |
+| @infrastructure.mdc   | Information about project infrastructure      |
+| @nextjs-fetch-strategy.mdc | Guidelines for fetch logic in Next.js - server vs client |
+| @date-utilities.mdc   | Use dateUtils for all date operations to ensure timezone consistency |
+| @client-server-separation.mdc | Guidelines for separating client-side and server-side code in lib files |
+
+## API Standards
+
+| Rule File             | Description                                   |
+| :-------------------- | :-------------------------------------------- |
+| @api-endpoints-crud.mdc | Standards for API endpoints following CRUD principles |
+
+## Features
+
+| Rule File                         | Description                                   |
+| :-------------------------------  | :-------------------------------------------- |
+| @auth0/initialize-auth0-nextjs.mdc| Initialize Auth0 in Next.js                   |
+| @auth0/auth0nextjs.mdc            | Using auth0 with next.js                      |
+| @auth0-sessions.mdc               | Using data from Auth0 sessions                |
+
+---
+
+- Add new rules to this index as you create them.
+- Use `@subdir/rule.mdc` for rules in subdirectories.

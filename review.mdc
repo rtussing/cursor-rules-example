@@ -1,0 +1,29 @@
+---
+description: Review recent changes or responses
+alwaysApply: false
+---
+# Review Rule
+
+When this rule is tagged with `@review`, it indicates that you should:
+
+1. Pause current task progression
+2. Review user comments about recent changes
+3. Address each point that the user specifies
+4. Make sure any edits improve code. Improved code is code that is more concise, maintainable, clear, efficient, and/or following best practices and existing patterns
+5. When a user asks for an explanation only, you aren't required to make edits
+
+Example usage:
+```
+@review
+- I think the user table should have a different attribute for tracking status
+```
+
+```
+@review The styling doesn't match our design system
+```\
+
+## Rules to follow when editing
+
+- Do not edit comments just to add or remove a couple of words unless that edit is integral to the meaning or definition
+  - For example, this is a useless edit because it doesn't change the meaning of anything: `### 4. API Endpoint Structure Options` --> `### 4. API Endpoint Structure`
+  - For example, this is a useful edit because it changes the purpose of the comment from being an idea to being a plan: `#### Option A: User-Centric Invitations Endpoint (RECOMMENDED)` --> `#### User Invitations Endpoint`

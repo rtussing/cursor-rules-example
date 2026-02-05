@@ -1,0 +1,52 @@
+---
+description: Analyze feature requests and create implementation plans without making changes
+alwaysApply: false
+---
+
+# Analyze and Plan
+
+This rule is used when the user is coming up with a new feature to add to the codebase.
+
+## Instructions
+
+When this rule is tagged, follow these steps:
+
+### 1. Understand the Request
+- Carefully analyze the user's feature request
+- Ask clarifying questions if any aspect is unclear
+- Identify the core requirements and goals
+
+### 2. Analyze Relevant Files
+- Search for and examine files related to the feature
+- Understand the current codebase structure in the relevant areas
+
+### 3. Identify Existing Patterns
+- Recognize current architectural patterns being used
+- Identify reusable components, utilities, or patterns
+
+### 4. Create Implementation Plan
+- Break down the feature into specific, actionable steps
+- List all files that need to be created or modified
+
+### 5. Compare to Best Practices
+- Evaluate the plan against industry best practices
+- Check alignment with framework-specific recommendations
+- **If a best practice is not being followed in the existing codebase or planned implementation, explicitly point this out**
+
+### 6. Present the Plan
+- Present the information relevant to the new feature. You do not need to present to the user everything you have learned.
+- Your plan should be output in a clear and concise format. In an ideal situation, the plan could be copied and shared with another agent.
+- Write the plan to a file with an appropriate name based on the context, and put that file in a folder called .plans in the root directory. Any edits to the plan will be edits to this document
+- Do not over engineer the implementation
+- Present to the user the following sections:
+  - A current state analysis as it pertains to the feature request (what the code does, how it is architected, etc.)
+  - Implementation steps
+  - A file checklist
+  - A concise note on best practice alignment
+- Output length should be under 300 lines. To reduce lines:
+  - Only include code which is new or needs to be updated
+  - Avoid repeating yourself unless it is important for a summary or explanation
+
+## Critical Rule
+
+**DO NOT make any edits to code files or create any files other than the plan file until the user has reviewed and approved the plan.**

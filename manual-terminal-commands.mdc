@@ -1,0 +1,22 @@
+---
+description: Terminal commands to output for manual execution (npm, npx)
+alwaysApply: true
+---
+# Manual Terminal Commands
+
+Certain terminal commands should be output for the user to run manually rather than executed by the agent. This ensures better control over package installations, dependency changes, and other critical operations.
+
+## Commands to Output (Not Execute)
+
+- Any command starting with `npm` (e.g., `npm install`, `npm run`, `npm update`)
+- Any command starting with `npx` (e.g., `npx prisma`, `npx create-next-app`)
+
+## Example
+
+Please run the following command to install the new dependency:
+
+```bash
+npm install zod
+```
+
+This will add Zod for schema validation to your project.

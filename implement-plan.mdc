@@ -1,0 +1,13 @@
+---
+description: Implement a pre-approved plan from the .plans directory
+alwaysApply: false
+---
+# Implement Plan
+
+When this rule is tagged, you are being provided with a pre-approved implementation plan (typically from the `.plans` directory) that has already been analyzed and reviewed.
+
+Your task is to execute the plan faithfully: recognize and follow existing codebase patterns, maintain consistency with current architectural decisions, and avoid over-engineering solutions beyond what the plan specifies.
+
+Keep your changes focused and minimal — only modify the files explicitly mentioned in the plan unless you encounter an unavoidable dependency.
+
+If you identify a significant issue with the plan, need to deviate from it, or have any questions, pause and consult the user before proceeding.
